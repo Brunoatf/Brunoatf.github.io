@@ -277,7 +277,7 @@ main {
 * Sections:
 */
 
-.section {
+section {
     height: 100vh;
     display: flex;
     align-content: center;
@@ -287,7 +287,7 @@ main {
     padding-right: 50px;
 }
 
-.section h2 {
+section h2 {
     font-size: 2.5vw;
     margin: 0 auto;
     text-align: center;
@@ -300,7 +300,7 @@ main {
 h2::after {
     content: "";
     height: .4vw;
-    width: 3vw;
+    width: 20%;
     display: block;
     background-color: rgb(19, 55, 153);
     margin: 10px auto;
@@ -308,9 +308,12 @@ h2::after {
 }
 
 @media screen and (max-width: 992px) {
-    .section {
-        padding-right: 25px;
-        padding-left: 25px;
+    section {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    section h2 {
+        font-size: 8vw;
     }
 }
 
@@ -335,7 +338,7 @@ h2::after {
 
 .profile-icon {
     font-size: 2.5vw;
-    margin-right: 20px;
+    margin-right: 4%;
 }
 
 li {
@@ -367,6 +370,9 @@ li {
         justify-content: flex-start;
     }
     section li {
-        font-size: 3vw;
+        font-size: 3.5vw;
+    }
+    .profile-icon {
+        font-size: 2em;
     }
 }
