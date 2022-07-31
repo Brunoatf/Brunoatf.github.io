@@ -1,0 +1,372 @@
+/*
+*  General:
+*/
+
+main {
+    margin-left: 160px;
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:992px) {
+    main {
+        margin-left: 0px;
+    }
+}
+
+/*
+*  Navigation:
+*/
+
+#navigation-menu {
+    width: 160px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    float:left;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    padding: 16px;
+    position: fixed;
+}
+
+.navigation-item {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    display:block;
+    padding: 15px;
+    background-color: rgb(236, 236, 236);
+    height: 56px;
+    width: 56px;
+    border-radius: 40px;
+    display:flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.navigation-item:hover {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(119, 154, 165), rgb(60, 74, 138));
+}
+
+.navigation-item span {
+    width:100%;
+    display:none;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navigation-item:hover span {
+    display:inline;
+    color: rgb(236, 236, 236);
+}
+
+.navigation-item i {
+    font-size: 24px;
+    color: rgb(70, 72, 75);
+}
+
+.navigation-item:hover i {
+    margin-right: 5px;
+    color: rgb(236, 236, 236);
+}
+
+.navigation-item:hover div {
+    display: inline;
+}
+
+@media screen and (max-width:992px) {
+    #navigation-menu {
+        display: none;
+    }
+}
+
+/*
+* Hero:
+*/
+
+@keyframes gradient-flow {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#hero {
+    background: linear-gradient(45deg, rgba(221, 203, 121, 0.9), rgb(216, 147, 101, 0.9), rgb(216, 101, 126, 0.9),
+     rgb(114, 134, 224, 0.9), rgba(96, 164, 228, 0.9), rgba(116, 214, 157, 0.9),rgb(201, 221, 218), rgb(255, 255, 255) );
+    animation: gradient-flow 15s ease infinite;
+    background-size: 400% 400%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 160px;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 62px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero p {
+    font-size: 32px;
+}
+
+#hero p span {
+    margin-left: 5px;
+    color:rgb(19, 55, 153);
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.input-cursor {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+#linkedin {
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.726);
+    transition: 0.3s;
+    width: 32px;
+    height: 32px;
+}
+
+#linkedin:hover {
+    color: rgb(19, 55, 153);
+}
+
+#typed-br {
+    display:none;
+}
+
+@media screen and (max-width:992px) {
+    #hero {
+        margin-left: 0px;
+        justify-content: center;
+    }
+    #hero h1 {
+        font-size: 8vw;
+    }
+    #hero p {
+        font-size: 5vw;
+    }
+    #hero p span {
+        margin-left: 0px;
+    }
+    .input-cursor {
+        height: 5vw;
+        top: 0.625vw;
+    }
+    #typed-br {
+        display: inline;
+    }
+    #linkedin {
+        font-size: 7vw;
+    }
+}
+
+/*
+* Mobile menu:
+*/
+
+#menu-button {
+    font-size: 9vw;
+    align-self:flex-end;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: none;
+    background-color: rgba(250, 235, 215, 0);
+    color: rgba(0, 0, 0, 0.726);
+    border:0px;
+}
+
+#close-button {
+    font-size: 5vw;
+}
+
+@media screen and (max-width:992px) {
+    #menu-button {
+        display: inline-block;
+        font-size: 9vw;
+    }
+}
+
+#offcanvasWithBothOptions {
+    transition: all 0.4s;
+}
+
+.offcanvas-item {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    padding: 15px;
+    background-color: rgb(236, 236, 236);
+    height: 72px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 40px;
+    display:flex;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    color:rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.offcanvas-item i {
+    margin-right: 10%;
+}
+
+#off-header {
+    position: absolute;
+}
+
+#off-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.active {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgb(119, 154, 165), rgb(60, 74, 138));
+}
+
+.active:hover, .active:focus {
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width:350px) {
+    #offcanvasWithBothOptions {
+        width: 100vw;
+    }
+}
+
+/*
+* Sections:
+*/
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.section h2 {
+    font-size: 2.5vw;
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    content: "";
+    height: .4vw;
+    width: 3vw;
+    display: block;
+    background-color: rgb(19, 55, 153);
+    margin: 10px auto;
+    position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    .section {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+/*
+* Sobre:
+*/
+
+#profile-image {
+    border-radius: 10000px;
+    width: 33%;
+    margin-right: 20px;
+    float: left;
+}
+
+#profile-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.profile-icon {
+    font-size: 2.5vw;
+    margin-right: 20px;
+}
+
+li {
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+@media screen and (max-width: 992px) {
+    #profile-container {
+        display:flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    #profile-image {
+        width: 50%;
+        float:none;
+        align-self: center;
+        margin-right: 0;
+    }
+    #profile-list {
+        height: auto;
+        padding-left: 0px;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    li {
+        justify-content: flex-start;
+    }
+    section li {
+        font-size: 3vw;
+    }
+}
