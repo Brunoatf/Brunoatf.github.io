@@ -13,16 +13,17 @@
         <header id="header">
             
             <nav id="navigation-menu">
-                <a class="navigation-item"><i class="bi bi-house"></i><span class="menu-span">Início</span></a>
-                <a class="navigation-item"><i class="bi bi-person"></i><span class="menu-span">Sobre</span></a>
-                <a class="navigation-item"><i class="bi bi-code-slash"></i><span class="menu-span">Portfólio</span></a>
-                <a class="navigation-item"><i class="bi bi-card-checklist"></i><span class="menu-span">Currículo</span></a>
-                <a class="navigation-item"><i class="bi bi-envelope"></i><span class="menu-span">Contato</span></a>
+                <a class="navigation-item" href="#header"><i class="bi bi-house"></i><span class="menu-span">Início</span></a>
+                <a class="navigation-item" href="#sobre"><i class="bi bi-person"></i><span class="menu-span">Sobre</span></a>
+                <a class="navigation-item" href="#portfólio"><i class="bi bi-code-slash"></i><span class="menu-span">Portfólio</span></a>
+                <a class="navigation-item" href="#contato"><i class="bi bi-envelope"></i><span class="menu-span">Contato</span></a>
             </nav>
             <div id="hero">
-                <button id="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                    <i class="bi bi-list"></i>
-                </button>
+                <div id="menu-button-div">
+                    <button id="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
                 <h1 id="name">Bruno Amaral Teixeira de Freitas</h1>
                 <p>Estudante de Engenharia de Computação apaixonado por
                     <br id="typed-br">
@@ -36,11 +37,10 @@
                     <button id="close-button" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div id="off-menu">
-                    <a class="offcanvas-item active"><i class="bi bi-house"></i><span class="menu-span">Início</span></a>
-                    <a class="offcanvas-item"><i class="bi bi-person"></i><span class="menu-span">Sobre</span></a>
-                    <a class="offcanvas-item"><i class="bi bi-code-slash"></i><span class="menu-span">Portfólio</span></a>
-                    <a class="offcanvas-item"><i class="bi bi-card-checklist"></i><span class="menu-span">Currículo</span></a>
-                    <a class="offcanvas-item"><i class="bi bi-envelope"></i><span class="menu-span">Contato</span></a>
+                    <a href="#header" class="offcanvas-item active"><i class="bi bi-house"></i><span class="menu-span">Início</span></a>
+                    <a href="#sobre" class="offcanvas-item"><i class="bi bi-person"></i><span class="menu-span">Sobre</span></a>
+                    <a href="#portfólio" class="offcanvas-item"><i class="bi bi-code-slash"></i><span class="menu-span">Portfólio</span></a>
+                    <a href="#contato" class="offcanvas-item"><i class="bi bi-envelope"></i><span class="menu-span">Contato</span></a>
                 </div>
             </div>
         </header>
