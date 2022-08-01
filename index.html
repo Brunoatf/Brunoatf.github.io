@@ -46,7 +46,7 @@
         </header>
         <main>
             <section id = "sobre" class="section">
-                <h2>SOBRE</h2>
+                <h2>Sobre</h2>
                 <article id="profile-container">
                     <img id="profile-image" src="imgs/minhaFoto.jpg">
                     <ul id="profile-list">
@@ -77,16 +77,22 @@
                 </article>
             </section>
             <section id = "portfólio" class="section">
-                <h2>PORTFÓLIO</h2>
+                <h2>Portfólio</h2>
                 <h3>Abaixo encontram-se alguns projetos que tive o prazer de desenvolver.</h3>
 
             </section>
             <section id = "contato" class="section">
                 <h2>Contato</h2>
-                <form action="https://formsubmit.co/0ccc3be617738de0f61895c3d29cdcd5" method="POST">
-                    <input type="text" name="name" required>
-                    <input type="email" name="email" required>
-                    <button type="submit">Send</button>
+                <h3>Envie-me um email!</h3>
+                <form id="email-form" action="https://formsubmit.co/0ccc3be617738de0f61895c3d29cdcd5" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" placeholder="Seu nome" type="text" name="name" required>
+                    <label for="email">Email:</label>
+                    <input id="email" placeholder="Seu email" type="email" name="email" required>
+                    <hr>
+                    <label for="message-input">Mensagem:</label>
+                    <textarea placeholder="Mensagem" type="text" name="message" id="message-input" required></textarea>
+                    <button id="submit" type="submit">Enviar</button>
                </form>
             </section>
         </main>
