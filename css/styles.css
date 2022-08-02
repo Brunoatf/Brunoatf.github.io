@@ -214,22 +214,15 @@ h3 {
 * Mobile menu:
 */
 
-#menu-button-div {
-    background-color: rgba(88, 88, 88, 0.589);
-    border-radius: 500px;
+#menu-button {
+    top: 5%;
+    right: 10%;
     align-self:flex-end;
     position: fixed;
-    width: 10vw;
-    height: 10vw;
-    top: 50px;
-    right: 50px;
     display: none;
-}
-
-#menu-button {
     font-size: 9vw;
     background-color: rgba(250, 235, 215, 0);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border:0px;
 }
 
@@ -238,10 +231,9 @@ h3 {
 }
 
 @media screen and (max-width:992px) {
-    #menu-button-div {
+    #menu-button {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
@@ -336,8 +328,9 @@ h2::after {
 
 @media screen and (max-width: 992px) {
     section {
-        padding-right: 5%;
-        padding-left: 5%;
+        padding-top:10%;
+        padding-right: 10%;
+        padding-left: 10%;
     }
     section h2 {
         font-size: 8vw;
@@ -477,3 +470,7 @@ label {
         font-size: 3.5vw;
     }
 }
+
+/*
+* Portfólio:
+*/
