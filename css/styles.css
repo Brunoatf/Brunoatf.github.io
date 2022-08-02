@@ -23,7 +23,7 @@ main {
     }
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
     font-family: "Poppins", sans-serif;
 }
 
@@ -474,3 +474,54 @@ label {
 /*
 * Portfólio:
 */
+
+#portfólio {
+    min-height: 100vh;
+    height: auto;
+}
+
+#portfolio-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.project-box {
+    width: 33%;
+    height: 200px;
+    background-color: cadetblue;
+    border: 2px solid rgb(255, 255, 255); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-decoration: none;
+    background: linear-gradient(45deg, rgba(221, 203, 121, 0.9), rgb(216, 147, 101, 0.9), rgb(216, 101, 126, 0.9),
+    rgb(114, 134, 224, 0.9), rgba(96, 164, 228, 0.9), rgba(116, 214, 157, 0.9),rgb(201, 221, 218), rgb(255, 255, 255) );
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradient-flow 15s ease infinite;
+}
+
+.project-text-div {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.3s linear;
+}
+
+.project-box:hover .project-text-div, .project-box:focus .project-text-div {
+    background: rgba(119, 119, 119, 0.411);
+}
+
+@media screen and (max-width: 992px) {
+    .project-box {
+        width: 40vw;
+        height: 40vw;
+        font-size: 3vw;
+    }
+}
