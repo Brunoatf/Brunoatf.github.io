@@ -314,7 +314,7 @@ section h2 {
     text-align: center;
     width: auto;
     display: inline-block;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 h2::after {
@@ -323,7 +323,9 @@ h2::after {
     width: 20%;
     display: block;
     background-color: rgb(19, 55, 153);
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 
@@ -332,7 +334,7 @@ h2::after {
         padding-top:10%;
         padding-right: 10%;
         padding-left: 10%;
-
+        padding-bottom: 10%;
     }
     section h2 {
         font-size: 8vw;
@@ -386,7 +388,8 @@ li {
         height: auto;
         padding-left: 0px;
         flex-grow: 1;
-        justify-content: space-evenly;
+        margin-top: 10%;
+        justify-content: space-between;
     }
     li {
         justify-content: flex-start;
@@ -536,8 +539,6 @@ label {
         height: 40vw;
         font-size: 3vw;
         margin-bottom: 0px;
-    }
-    #portfolio-box {
-       
+        font-size: 3vw;
     }
 }
