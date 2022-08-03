@@ -27,6 +27,10 @@ h1, h2, h3, p, a {
     font-family: "Poppins", sans-serif;
 }
 
+h1 {
+    font-size: 62px;
+}
+
 h2 {
     font-weight: bold;
 }
@@ -136,10 +140,6 @@ h3 {
     height: 100%;
     margin-left: 160px;
     padding: 50px;
-}
-
-#hero h1 {
-    font-size: 62px;
 }
 
 #hero p {
@@ -485,14 +485,14 @@ label {
     height: auto;
 }
 
-#portfolio-article {
+#portfolio-initial-page {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-#portfolio-box {
+#portfolio-nav {
     display: flex;
     height: 100%;
     flex-wrap: wrap;
@@ -502,7 +502,6 @@ label {
 .project-box {
     width: 33%;
     height: 200px;
-    background-color: cadetblue;
     border: 2px solid rgb(255, 255, 255); 
     display: flex;
     flex-direction: column;
@@ -530,8 +529,17 @@ label {
     background: rgba(119, 119, 119, 0.411);
 }
 
+.project-article {
+    border-left: 2px solid rgb(19, 55, 153);
+    width: 100%;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 992px) {
-    #portfolio-article {
+    #portfolio-initial-page {
         height: 100%;
     }
     .project-box {
