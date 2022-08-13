@@ -39,6 +39,10 @@ h3 {
     font-size: 2vw;
 }
 
+h5 {
+    text-align: center;
+}
+
 @media screen and (max-width:992px) {
     main {
         margin-left: 0px;
@@ -357,10 +361,14 @@ h2::after {
 
 #profile-list {
     list-style: none;
+}
+
+.side-list {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    text-align: justify;
 }
 
 .profile-icon {
@@ -368,7 +376,7 @@ h2::after {
     margin-right: 4%;
 }
 
-li {
+#sobre li {
     font-size: 1.2vw;
     display: flex;
     align-items: center;
@@ -390,18 +398,18 @@ li {
         align-self: center;
         margin-right: 0;
     }
-    #profile-list {
+    .side-list {
         height: auto;
         padding-left: 0px;
         flex-grow: 1;
         margin-top: 10%;
         justify-content: space-between;
     }
-    li {
+    #sobre li {
         justify-content: flex-start;
         padding: 5%;
     }
-    section li {
+    #sobre li {
         font-size: 3.5vw;
     }
     .profile-icon {
@@ -538,11 +546,16 @@ label {
 
 .project-article {
     border-left: 2px solid rgb(19, 55, 153);
+    height: auto;
     width: 100%;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.project-article p {
+    text-align: justify;
 }
 
 @media screen and (max-width: 992px) {
@@ -555,5 +568,37 @@ label {
         font-size: 3vw;
         margin-bottom: 0px;
         font-size: 3vw;
+    }
+}
+
+/*
+* App lactec:
+*/
+
+.app-screen {
+    width: 25%;
+    margin-right: 2vw;
+}
+
+.app-screenshot-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.315);
+}
+
+@media screen and (max-width: 992px) {
+    .app-screen {
+        width: 70%;
+        margin-right: 0px;
+    }
+    .app-screenshot-container {
+        margin-left: 4vw;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vw;
     }
 }
