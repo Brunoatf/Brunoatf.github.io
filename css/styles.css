@@ -581,8 +581,20 @@ label {
     margin-right: 2vw;
 }
 
-.app-screenshot-container {
+.project-container {
     width: 100%;
+    height: 60%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.315);
+}
+
+.project-image-container {
+    width: 80%;
     height: 60%;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -601,10 +613,16 @@ label {
         width: 100%;
         margin-right: 0px;
     }
-    .app-screenshot-container {
+    .project-container {
         flex-direction: column;
         align-items: center;
         padding: 10vw;
+    }
+    .project-image-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 3vw;
+        width: 100%;
     }
 }
 
@@ -612,6 +630,6 @@ label {
 * Jogo MC322:
 */
 
-.game-project-image {
+.project-image {
     width: 100%;
 }
