@@ -578,6 +578,7 @@ label {
 }
 
 .project-image-container {
+    align-self: center;
     width: 80%;
     height: 60%;
     margin-top: 25px;
