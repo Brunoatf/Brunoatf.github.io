@@ -39,16 +39,24 @@ h3 {
     font-size: 2vw;
 }
 
+h4 {
+    font-size: 2.1vw;
+}
+
 h5 {
     text-align: center;
+    font-size: 2vw;
 }
 
 @media screen and (max-width:992px) {
     main {
         margin-left: 0px;
     }
-    h3 {
+    h3, h5 {
         font-size: 4vw;
+    }
+    h4 {
+        font-size: 4.2vw;
     }
 }
 
@@ -508,31 +516,6 @@ label {
     justify-content: space-evenly;
 }
 
-#portfolio-nav {
-    display: flex;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.project-box {
-    width: 33%;
-    height: 200px;
-    border: 2px solid rgb(255, 255, 255); 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    text-decoration: none;
-    background: linear-gradient(45deg, rgba(221, 203, 121, 0.9), rgb(216, 147, 101, 0.9), rgb(216, 101, 126, 0.9),
-    rgb(114, 134, 224, 0.9), rgba(96, 164, 228, 0.9), rgba(116, 214, 157, 0.9),rgb(201, 221, 218), rgb(255, 255, 255) );
-    background-attachment: fixed;
-    background-size: 400% 400%;
-    animation: gradient-flow 15s ease infinite;
-    font-size: 1.5vw;
-}
-
 .project-text-div {
     padding: 10px;
     color: rgb(255, 255, 255);
@@ -556,6 +539,7 @@ label {
 }
 
 .project-article p {
+    font-size: 1.5vw;
     text-align: justify;
 }
 
@@ -563,12 +547,8 @@ label {
     #portfolio-initial-page {
         height: 100%;
     }
-    .project-box {
-        width: 40vw;
-        height: 40vw;
-        font-size: 3vw;
-        margin-bottom: 0px;
-        font-size: 3vw;
+    .project-article p {
+        font-size: 3.5vw;
     }
 }
 
@@ -579,6 +559,10 @@ label {
 .app-screen {
     width: 25%;
     margin-right: 2vw;
+}
+
+.app-list {
+    font-size: 1.5vw;
 }
 
 .project-container {
@@ -605,6 +589,10 @@ label {
     box-shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.315);
 }
 
+.screen-infomation-title {
+    font-size: 5vw;
+}
+
 @media screen and (max-width: 992px) {
     .project-article h4, .project-article p {
         margin-left: 4vw;
@@ -623,6 +611,9 @@ label {
         align-items: center;
         padding: 3vw;
         width: 100%;
+    }
+    .app-list {
+        font-size: 3.5vw;
     }
 }
 
