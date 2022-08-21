@@ -17,7 +17,7 @@ main {
     align-items: center;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, h4, h5, h6, li, p, a {
     font-family: "Poppins", sans-serif;
 }
 
@@ -257,7 +257,7 @@ h5 {
 #offcanvasWithBothOptions {
     width: 75%;
     transition: all 0.4s;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .offcanvas-item {
@@ -510,11 +510,40 @@ label {
     height: auto;
 }
 
+.project-link:hover {
+    background: linear-gradient(45deg, rgb(119, 154, 165), rgb(60, 74, 138));
+}
+
+.project-link:hover {
+    color: rgb(256, 256, 256);
+}
+
 #portfolio-initial-page {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.project-link {
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.315);
+    text-decoration: none;
+    margin: 15px;
+    color:rgb(0, 0, 0);
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.project-link-divisor {
+    height: 8px;
+    width: 8px;
+    border-radius: 1000px;
+    background-color: rgb(19, 55, 153);
 }
 
 .project-text-div {
@@ -535,8 +564,9 @@ label {
     width: 100%;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
 }
 
 .project-article p {
@@ -550,6 +580,10 @@ label {
     }
     .project-article p {
         font-size: 3.5vw;
+    }
+    .project-link {
+        padding: 15px;
+        font-size: 4vw;
     }
 }
 
