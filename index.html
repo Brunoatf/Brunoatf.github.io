@@ -1,250 +1,43 @@
-<!doctype html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bruno Amaral Teixeira de Freitas</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Strive — Em breve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="js/script.js"></script>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #f7fafc, #e2e8f0);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #2d3748;
+        text-align: center;
+        padding: 20px;
+      }
 
-    </head>
-    <body>
-        <header id="header"> 
-            <nav id="navigation-menu">
-                <a class="navigation-item" href="#header"><i class="bi bi-house"></i><span class="menu-span">Início</span></a>
-                <a class="navigation-item" href="#sobre"><i class="bi bi-person"></i><span class="menu-span">Sobre</span></a>
-                <a class="navigation-item" href="#portfólio"><i class="bi bi-code-slash"></i><span class="menu-span">Portfólio</span></a>
-                <a class="navigation-item" href="#contato"><i class="bi bi-envelope"></i><span class="menu-span">Contato</span></a>
-            </nav>
-            <div id="hero">
-                <button id="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                    <i class="bi bi-list"></i>
-                </button>
-                <h1 id="name">Bruno Amaral Teixeira de Freitas</h1>
-                <p>Estudante de Engenharia de Computação apaixonado por
-                    <br id="typed-br">
-                    <span id="hero-typed"></span>
-                    <span class="input-cursor"></span>
-                </p>
-                <a href="https://www.linkedin.com/in/brunoatfreitas/" id="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div id="off-header" class="offcanvas-header">
-                    <button id="close-button" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div id="off-menu">
-                    <a href="#header" class="offcanvas-item active"><i class="bi bi-house"></i><span class="menu-span">Início</span></a>
-                    <a href="#sobre" class="offcanvas-item"><i class="bi bi-person"></i><span class="menu-span">Sobre</span></a>
-                    <a href="#portfólio" class="offcanvas-item"><i class="bi bi-code-slash"></i><span class="menu-span">Portfólio</span></a>
-                    <a href="#contato" class="offcanvas-item"><i class="bi bi-envelope"></i><span class="menu-span">Contato</span></a>
-                </div>
-            </div>
-        </header>
-        <main>
-            <section id = "sobre" class="section">
-                <h2>Sobre</h2>
-                <article id="profile-container">
-                    <img id="profile-image" src="imgs/minhaFoto.jpg">
-                    <ul class="side-list">
-                        <li>
-                            <i class="bi bi-person profile-icon"></i>
-                            Tenho 19 anos.
-                        </li>
-                        <li>
-                            <i class="bi bi-geo-alt profile-icon"></i>
-                            Nasci e cresci em Curitiba. Desde 2021, estudo Engenharia de Computação na Universidade Estadual
-                            de Campinas (UNICAMP).
-                        </li>
-                        <li>
-                            <i class="bi bi-clipboard-data profile-icon"></i>
-                            Considero disciplina, criatividade e trabalho em equipe como meus pontos fortes.
-                        </li>
-                        <li>
-                            <i class="bi bi-trophy profile-icon"></i>
-                            Tenho como principal objetivo profissional a excelência
-                            na criação de soluções por meio da tecnologia.
-                        </li>
-                        <li>
-                            <i class="bi bi-file-earmark-code profile-icon"></i>
-                            Atualmente busco expandir a minha bagagem de conhecimentos e experiências
-                            nas áreas de Engenharia e Tecnologia da Informação.
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <section id = "portfólio" class="section">
-                <h2>Portfólio</h2>
-                <h3>Abaixo encontram-se alguns projetos que tive o prazer de desenvolver.</h3>
-                <a href="#site-portfolio" class="project-link">Site de Portfólio (Julho 2022)</a>
-                <div class="project-link-divisor"></div>
-                <a href="#plantsvszombies" class="project-link">Recriação do jogo Plants Vs Zombies (Junho 2022)</a>
-                <div class="project-link-divisor"></div>
-                <a href="#app-lactec"class="project-link">Aplicativo mobile para controle de estações de carregamento de carros elétricos (Março 2022)</a>
-                <div class="project-link-divisor"></div>
-                <a href="#reg-log" class="project-link">Visualização do processo de treino de um classificador com regressão logística (Dezembro 2021)</a>
-                <div class="project-link-divisor"></div>
-                <a href="#reviews" class="project-link">Classificador de reviews de produtos (Dezembro 2021)</a>
-                <div class="project-link-divisor"></div>
-                <a href="#rede-neural" class="project-link">Rede Neural sem o uso de bibliotecas de Deep Learning (Outubro 2021)</a>
-                <h3>Projetos de 2022:</h3>
-                <article id="site-portfolio" class="project-article">
-                    <h4>Site de Portfólio</h4>
-                    <p> Após ter estudado HTML, CSS e Javascript durante as férias
-                        de inverno de 2022, busquei criar o presente portfólio - partindo do 0 - para testar e reforçar meus conhecimentos.
-                        O design utilizado foi uma mistura das minhas ideias com inspirações obtidas na internet. Assim como nos demais
-                        projetos, todo o código é de minha autoria.
-                    </p>
-                </article>
-                <article id="plantsvszombies" class="project-article">
-                    <h4>Recriação do jogo Plants Vs Zombies</h4>
-                    <p>Em dupla com colega, me propus a desenvolver uma versão própria do jogo Plants Vs Zombies - como
-                        projeto final da disciplina de Programação Orientada a Objetos, na Unicamp, durante o primeiro
-                        semestre de 2022. O jogo foi feito na linguagem Java com o framework LibGDX. Abaixo, seguem uma captura de tela
-                        do jogo mostrando a interface gráfica implementada e um diagrama da arquitetura do projeto. 
-                    </p>
-                </article>
-                <h5 class="screen-information-title">Captura de tela do jogo durante uma partida</h5>
-                <div class="project-image-container">
-                    <img class="project-image" src="imgs/pvz.jpg">
-                </div>
-                <h5 class="screen-information-title">Diagrama geral da arquitetura do projeto</h5>
-                <div class="project-image-container">
-                    <img class="project-image" src="imgs/diagramaGeral.png">
-                </div>
-                <article class="project-article" id="app-lactec">
-                    <h4>Aplicativo mobile para controle de estações de carregamento de carros elétricos</h4>
-                    <p>Desenvolvi aplicativo voltado ao controle, localização e monitoramento de estações de 
-                        carregamento de carros elétricos para o centro de pesquisa e
-                        desenvolvimento Lactec, durante estágio de verão realizado em Curitiba (Jan 2022 - Mar 2022).
-                        O projeto foi feito utilizando-se o framework React Native. Abaixo, seguem imagens e informações referentes às
-                        telas e funcionalidades do aplicativo.
-                    </p>
-                </article>
-                <h5 class="screen-information-title">Tela de login</h5>
-                <div class="project-container">
-                    <img id="login-screen" class="app-screen" src="imgs/screen1.png">
-                    <div class="screen-information">
-                        <ul class="side-list app-list">
-                            <li>Tela inicial.</li>
-                            <li>Permite que apenas usuários autorizados possam acessar as demais funcionalidades do aplicativo.</li>
-                            <li>Pode-se escolher entre diferentes servidores para autenticar os dados de login.</li>
-                            <li>O botão "lembrar-me" salva os dados do usuário em armazenamento local, facilitando futuros logins.</li>
-                        </ul>
-                    </div>
-                </div>
-                <h5 class="screen-information-title">Tela de recarga</h5>
-                <div class="project-container">
-                    <img id="login-screen" class="app-screen" src="imgs/screen2.png">
-                    <div class="screen-information">
-                        <ul class="side-list app-list">
-                            <li>Permite que o usuário desbloqueie uma estação de carregamento e inicie uma recarga.</li>
-                            <li>
-                                Após preencher os dados da estação desejada e clicar no botão "iniciar recarga", o aplicativo faz uma 
-                                requisição ao servidor da empresa. Se os dados estiverem corretos, a estação será desbloqueada.
-                            </li>
-                            <li>
-                                Assim que a estação for desbloqueada, o botão de iniciar recarga é substituído por outro com a função de interromper a recarga. Além disso,
-                                um valor é atribuído ao id da transação, identificando a atual recarga.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h5 class="screen-information-title">Tela de informações</h5>
-                <div class="project-container">
-                    <img id="login-screen" class="app-screen" src="imgs/screen3.png">
-                    <div class="screen-information">
-                        <ul class="side-list app-list">
-                            <li>Com o id da transação, o usuário pode fazer uma consulta nos servidores da empresa a respeito de diversas 
-                                informações de uma recarga - esteja ela finalizada ou não.
-                            </li>
-                            <li>
-                                O usuário tem a opção de atualizar em tempo real os dados da recarga analisada.
-                            </li>
-                            <li>
-                                Caso a recarga analisada esteja com status ativo, o usuário terá à sua disponibilidade um botão para finalizá-la.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h5 class="screen-information-title">Tela de mapa</h5>
-                <div class="project-container">
-                    <img id="login-screen" class="app-screen" src="imgs/screen4.png">
-                    <div class="screen-information">
-                        <ul class="side-list app-list">
-                            <li>
-                                Integração ao Google Maps.
-                            </li>
-                            <li>
-                                Estações de carregamento em um raio de 5km do dispositivo serão identificadas no mapa com balões personalizados.
-                            </li>
-                            <li>
-                                As informações de uma estação podem ser obtidas ao clicar no seu respectivo balão. Esses mesmos dados podem ser utilizados para
-                                desbloquear a estação e iniciar uma recarga. 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h3>Projetos de 2021:</h3>
-                <article id="reg-log" class="project-article">
-                    <h4> Visualização do processo de treino de um classificador com regressão logística</h4>
-                    <p> Fiz este projeto durante as férias de verão de 2021-2022 com o objetivo de 
-                        melhor visualizar e entender o funcionamento do processo de treino de um classificador
-                        binário baseado em regressão logística. O projeto foi feito em Python, com o auxílio das bibliotecas Matplotlib, Numpy
-                        e Celluloid.
-                    </p>
-                </article>
-                <h5>Treino do classificador com base em dados bidimensionais</h5>
-                <div class="project-image-container">
-                    <video width="100%" src="videos/logistic3d.mp4" controls autoplay loop></video>
-                </div>
-                <h5>Treino do classificador com base em dados unidimensionais</h5>
-                <div class="project-image-container">
-                    <video width="100%" src="videos/logistic2d.mp4" controls autoplay></video>
-                </div>
-                <article id="reviews" class="project-article">
-                    <h4>Classificador de reviews de compradores do Ebay</h4>
-                    <p> Programa que classifica, em tempo real, uma review de um produto em positiva ou negativa. Fiz esse projeto após ter
-                        participado de uma sequência de oficinas promovidas pelo grupo Iris Data Science Unicamp, nos temas de Ciência de Dados
-                        e Aprendizado de Máquina. O projeto final foi apresentado aos demais membros em evento no final do primeiro semestre de 2021. Utilizei a
-                        linguagem Python, com o auxílio das bibliotecas SkLearn, Pandas, Numpy e Matplotlib. O programa foi treinado com milhares de
-                        reviews de consumidores obtidas em conjunto de dados da plataforma Kaggle. A interface gráfica foi feita com Gradio.
-                    </p>
-                </article>
-                <h5>Exemplo do classificador funcionando em tempo real</h5>
-                <div class="project-image-container">
-                    <video width="100%" src="videos/analisador.mp4" controls autoplay></video>
-                </div>
-                <article id="rede-neural" class="project-article">
-                    <h4>Rede Neural sem o uso de bibliotecas de Deep Learning</h4>
-                    <p>
-                        Esse projeto é o código final que produzi durante e após ter participado de oficinas do grupo estudantil
-                        Iris Data Science Unicamp voltadas a explicar os princípios básicos de uma Rede Neural. Foram implementados neurônios,
-                        camadas, redes e o algoritmo backpropagation - além de uma animação sobre uma curva cosseno para visualizar o projeto.
-                    </p>
-                </article>
-                <h5>Visualização do treino da rede implementada</h5>
-                <div class="project-image-container">
-                    <video width="100%" src="videos/redeneuralanimada.mp4" controls autoplay></video>
-                </div>
-            </section>
-            <section id = "contato" class="section">
-                <h2>Contato</h2>
-                <h3>Envie-me um email!</h3>
-                <form id="email-form" action="https://formsubmit.co/0ccc3be617738de0f61895c3d29cdcd5" method="POST">
-                    <label for="nome">Nome:</label>
-                    <input id="nome" placeholder="Seu nome" type="text" name="name" required>
-                    <label for="email">Email:</label>
-                    <input id="email" placeholder="Seu email" type="email" name="email" required>
-                    <hr>
-                    <label for="message-input">Mensagem:</label>
-                    <textarea placeholder="Mensagem" type="text" name="message" id="message-input" required></textarea>
-                    <button id="submit" type="submit">Enviar</button>
-               </form>
-            </section>
-        </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    </body>
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        color: #4a5568;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Strive está chegando</h1>
+      <p>Estamos preparando algo especial. Volte em breve!</p>
+    </main>
+  </body>
 </html>
